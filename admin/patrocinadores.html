@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animalec - Patrocinadores</title>
+    <link rel="stylesheet" href="../css/admin.css">
+</head>
+<body>
+    <header class="admin-header">
+        <div class="header-content">
+            <nav class="mobile-nav">
+                <button class="menu-toggle" aria-label="Menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <h1>ANIMALEC</h1>
+                <button class="settings-toggle" aria-label="Configurações">⚙️</button>
+            </nav>
+        </div>
+    </header>
+
+    <main class="admin-main">
+        <section class="admin-content">
+            <div id="patrocinadores" class="content-section active">
+                <header class="section-header">
+                    <h2>PATROCINADORES</h2>
+                    <div class="section-actions">
+                        <button class="btn-add">+ Novo</button>
+                        <button class="btn-filter" aria-label="Filtrar">🔍</button>
+                    </div>
+                </header>
+                
+                <div class="cards-container">
+                    <article class="sponsor-card">
+                        <div class="card-logo">
+                            <span class="logo-placeholder">LOGO</span>
+                        </div>
+                        <div class="card-content">
+                            <h3>Empresa A</h3>
+                            <p class="sponsor-tier tier-gold">Ouro</p>
+                            <p class="sponsor-validity">Até: 31/12/2025</p>
+                            <p class="sponsor-status status-active">✓ Ativo</p>
+                        </div>
+                        <div class="card-actions">
+                            <button class="btn-view" aria-label="Visualizar">👁️</button>
+                            <button class="btn-edit" aria-label="Editar">✏️</button>
+                            <button class="btn-delete" aria-label="Eliminar">🗑️</button>
+                        </div>
+                    </article>
+
+                    <article class="sponsor-card">
+                        <div class="card-logo">
+                            <span class="logo-placeholder">LOGO</span>
+                        </div>
+                        <div class="card-content">
+                            <h3>Empresa B</h3>
+                            <p class="sponsor-tier tier-silver">Prata</p>
+                            <p class="sponsor-validity">Até: 30/06/2026</p>
+                            <p class="sponsor-status status-active">✓ Ativo</p>
+                        </div>
+                        <div class="card-actions">
+                            <button class="btn-view" aria-label="Visualizar">👁️</button>
+                            <button class="btn-edit" aria-label="Editar">✏️</button>
+                            <button class="btn-delete" aria-label="Eliminar">🗑️</button>
+                        </div>
+                    </article>
+
+                    <article class="sponsor-card">
+                        <div class="card-logo">
+                            <span class="logo-placeholder">LOGO</span>
+                        </div>
+                        <div class="card-content">
+                            <h3>Empresa C</h3>
+                            <p class="sponsor-tier tier-bronze">Bronze</p>
+                            <p class="sponsor-validity">Até: 15/03/2026</p>
+                            <p class="sponsor-status status-inactive">✗ Inativo</p>
+                        </div>
+                        <div class="card-actions">
+                            <button class="btn-view" aria-label="Visualizar">👁️</button>
+                            <button class="btn-edit" aria-label="Editar">✏️</button>
+                            <button class="btn-delete" aria-label="Eliminar">🗑️</button>
+                        </div>
+                    </article>
+                </div>
+
+                <nav class="pagination">
+                    <button class="btn-prev" aria-label="Página anterior">‹</button>
+                    <span class="page-info">1/3</span>
+                    <button class="btn-next" aria-label="Próxima página">›</button>
+                </nav>
+            </div>
+        </section>
+    </main>
+
+    <footer class="admin-footer">
+        <p>© 2025 Animalec</p>
+    </footer>
+
+    <script src="../js/admin.js"></script>
+    <script src="../js/admin-entities.js"></script>
+</body>
+</html>

@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animalec - Novo Patrocinador</title>
+    <link rel="stylesheet" href="../css/admin.css">
+</head>
+<body>
+    <header class="admin-header">
+        <div class="header-content">
+            <nav class="mobile-nav">
+                <button class="menu-toggle" aria-label="Menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <h1>ANIMALEC</h1>
+                <button class="settings-toggle" aria-label="Configurações">⚙️</button>
+            </nav>
+        </div>
+    </header>
+
+    <main class="admin-main">
+        <section class="admin-content">
+            <div id="novo-patrocinador" class="content-section active">
+                <header class="section-header">
+                    <h2>NOVO PATROCINADOR</h2>
+                </header>
+                
+                <form class="entity-form" id="sponsor-form">
+                    <fieldset>
+                        <legend>Informações da Empresa</legend>
+                        
+                        <div class="form-group">
+                            <label for="sponsor-name">Nome da Empresa</label>
+                            <input type="text" id="sponsor-name" name="name" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="sponsor-logo">Logo da Empresa</label>
+                            <input type="file" id="sponsor-logo" name="logo" accept="image/*">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="sponsor-email">Email de Contacto</label>
+                            <input type="email" id="sponsor-email" name="email" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="sponsor-phone">Telefone</label>
+                            <input type="tel" id="sponsor-phone" name="phone">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="sponsor-website">Website</label>
+                            <input type="url" id="sponsor-website" name="website" placeholder="https://www.empresa.com">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="sponsor-address">Morada</label>
+                            <textarea id="sponsor-address" name="address" rows="2"></textarea>
+                        </div>
+                    </fieldset>
+
+                    <fieldset>
+                        <legend>Detalhes do Patrocínio</legend>
+                        
+                        <div class="form-group">
+                            <label for="sponsor-tier">Tipo de Patrocínio</label>
+                            <select id="sponsor-tier" name="tier" required>
+                                <option value="">Selecione o tipo</option>
+                                <option value="ouro">Ouro</option>
+                                <option value="prata">Prata</option>
+                                <option value="bronze">Bronze</option>
+                                <option value="parceiro">Parceiro</option>
+                                <option value="apoiante">Apoiante</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="sponsor-amount">Valor do Patrocínio (€)</label>
+                            <input type="number" id="sponsor-amount" name="amount" min="0" step="0.01">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="sponsor-start-date">Data de Início</label>
+                            <input type="date" id="sponsor-start-date" name="start_date" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="sponsor-end-date">Data de Fim</label>
+                            <input type="date" id="sponsor-end-date" name="end_date" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="sponsor-description">Descrição do Patrocínio</label>
+                            <textarea id="sponsor-description" name="description" rows="3" placeholder="Descreva os detalhes do patrocínio"></textarea>
+                        </div>
+                    </fieldset>
+
+                    <fieldset>
+                        <legend>Animais Patrocinados</legend>
+                        
+                        <div class="form-group">
+                            <label for="sponsor-animals">Animais a Patrocinar</label>
+                            <select id="sponsor-animals" name="animals[]" multiple>
+                                <option value="1">Leão</option>
+                                <option value="2">Elefante Africano</option>
+                                <option value="3">Girafa</option>
+                                <option value="4">Pinguim</option>
+                                <option value="5">Tartaruga</option>
+                                <option value="6">Tigre</option>
+                                <option value="7">Zebra</option>
+                                <option value="8">Macaco</option>
+                            </select>
+                            <small>Segure Ctrl (Windows) ou Cmd (Mac) para selecionar múltiplos</small>
+                        </div>
+                    </fieldset>
+
+                    <fieldset>
+                        <legend>Estado do Patrocínio</legend>
+                        
+                        <div class="form-group checkbox-group">
+                            <input type="checkbox" id="sponsor-active" name="active" checked>
+                            <label for="sponsor-active">Patrocínio Ativo</label>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="sponsor-notes">Observações</label>
+                            <textarea id="sponsor-notes" name="notes" rows="2"></textarea>
+                        </div>
+                    </fieldset>
+
+                    <div class="form-actions">
+                        <button type="submit" class="btn-save">Guardar</button>
+                        <button type="button" class="btn-cancel" onclick="window.location.href='patrocinadores.html'">Cancelar</button>
+                    </div>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer class="admin-footer">
+        <p>© 2025 Animalec</p>
+    </footer>
+
+    <script src="../js/admin.js"></script>
+    <script src="../js/admin-entities.js"></script>
+</body>
+</html>

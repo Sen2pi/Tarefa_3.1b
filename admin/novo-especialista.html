@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animalec - Novo Especialista</title>
+    <link rel="stylesheet" href="../css/admin.css">
+</head>
+<body>
+    <header class="admin-header">
+        <div class="header-content">
+            <nav class="mobile-nav">
+                <button class="menu-toggle" aria-label="Menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <h1>ANIMALEC</h1>
+                <button class="settings-toggle" aria-label="Configurações">⚙️</button>
+            </nav>
+        </div>
+    </header>
+
+    <main class="admin-main">
+        <section class="admin-content">
+            <div id="novo-especialista" class="content-section active">
+                <header class="section-header">
+                    <h2>NOVO ESPECIALISTA</h2>
+                </header>
+                
+                <form class="entity-form" id="expert-form">
+                    <fieldset>
+                        <legend>Informações Pessoais</legend>
+                        
+                        <div class="form-group">
+                            <label for="expert-name">Nome Completo</label>
+                            <input type="text" id="expert-name" name="name" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="expert-email">Email</label>
+                            <input type="email" id="expert-email" name="email" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="expert-phone">Telefone</label>
+                            <input type="tel" id="expert-phone" name="phone">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="expert-photo">Fotografia</label>
+                            <input type="file" id="expert-photo" name="photo" accept="image/*">
+                        </div>
+                    </fieldset>
+
+                    <fieldset>
+                        <legend>Informações Profissionais</legend>
+                        
+                        <div class="form-group">
+                            <label for="expert-specialty">Especialidade</label>
+                            <select id="expert-specialty" name="specialty" required>
+                                <option value="">Selecione uma especialidade</option>
+                                <option value="mamiferos">Mamíferos</option>
+                                <option value="aves">Aves</option>
+                                <option value="repteis">Répteis</option>
+                                <option value="anfibios">Anfíbios</option>
+                                <option value="peixes">Peixes</option>
+                                <option value="invertebrados">Invertebrados</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="expert-qualifications">Qualificações</label>
+                            <textarea id="expert-qualifications" name="qualifications" rows="3" placeholder="Descreva as qualificações académicas e profissionais"></textarea>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="expert-experience">Anos de Experiência</label>
+                            <input type="number" id="expert-experience" name="experience" min="0" max="50">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="expert-institution">Instituição/Afiliação</label>
+                            <input type="text" id="expert-institution" name="institution">
+                        </div>
+                    </fieldset>
+
+                    <fieldset>
+                        <legend>Disponibilidade</legend>
+                        
+                        <div class="form-group checkbox-group">
+                            <input type="checkbox" id="expert-available" name="available">
+                            <label for="expert-available">Disponível para consultas</label>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="expert-schedule">Horário de Disponibilidade</label>
+                            <input type="text" id="expert-schedule" name="schedule" placeholder="Ex: Seg-Sex: 9h-17h">
+                        </div>
+                    </fieldset>
+
+                    <fieldset>
+                        <legend>Animais Associados</legend>
+                        
+                        <div class="form-group">
+                            <label for="expert-animals">Animais sob responsabilidade</label>
+                            <select id="expert-animals" name="animals[]" multiple>
+                                <option value="1">Leão</option>
+                                <option value="2">Elefante Africano</option>
+                                <option value="3">Girafa</option>
+                                <option value="4">Pinguim</option>
+                                <option value="5">Tartaruga</option>
+                            </select>
+                            <small>Segure Ctrl (Windows) ou Cmd (Mac) para selecionar múltiplos</small>
+                        </div>
+                    </fieldset>
+
+                    <div class="form-actions">
+                        <button type="submit" class="btn-save">Guardar</button>
+                        <button type="button" class="btn-cancel" onclick="window.location.href='especialistas.html'">Cancelar</button>
+                    </div>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer class="admin-footer">
+        <p>© 2025 Animalec</p>
+    </footer>
+
+    <script src="../js/admin.js"></script>
+    <script src="../js/admin-entities.js"></script>
+</body>
+</html>

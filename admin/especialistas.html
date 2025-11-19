@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animalec - Especialistas</title>
+    <link rel="stylesheet" href="../css/admin.css">
+</head>
+<body>
+    <header class="admin-header">
+        <div class="header-content">
+            <nav class="mobile-nav">
+                <button class="menu-toggle" aria-label="Menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <h1>ANIMALEC</h1>
+                <button class="settings-toggle" aria-label="Configurações">⚙️</button>
+            </nav>
+        </div>
+    </header>
+
+    <main class="admin-main">
+        <section class="admin-content">
+            <div id="especialistas" class="content-section active">
+                <header class="section-header">
+                    <h2>ESPECIALISTAS</h2>
+                    <div class="section-actions">
+                        <button class="btn-add">+ Novo</button>
+                        <button class="btn-filter" aria-label="Filtrar">🔍</button>
+                    </div>
+                </header>
+                
+                <div class="cards-container">
+                    <article class="expert-card">
+                        <div class="card-image">
+                            <span class="photo-placeholder">( FOTO )</span>
+                        </div>
+                        <div class="card-content">
+                            <h3>Dr. João Silva</h3>
+                            <p class="expert-specialty">Mamíferos</p>
+                            <p class="expert-email">joao.silva@animalec.pt</p>
+                            <p class="expert-status status-available">✓ Disponível</p>
+                        </div>
+                        <div class="card-actions">
+                            <button class="btn-view" aria-label="Visualizar">👁️</button>
+                            <button class="btn-edit" aria-label="Editar">✏️</button>
+                            <button class="btn-delete" aria-label="Eliminar">🗑️</button>
+                        </div>
+                    </article>
+
+                    <article class="expert-card">
+                        <div class="card-image">
+                            <span class="photo-placeholder">( FOTO )</span>
+                        </div>
+                        <div class="card-content">
+                            <h3>Dra. Maria Costa</h3>
+                            <p class="expert-specialty">Aves</p>
+                            <p class="expert-email">maria.costa@animalec.pt</p>
+                            <p class="expert-status status-available">✓ Disponível</p>
+                        </div>
+                        <div class="card-actions">
+                            <button class="btn-view" aria-label="Visualizar">👁️</button>
+                            <button class="btn-edit" aria-label="Editar">✏️</button>
+                            <button class="btn-delete" aria-label="Eliminar">🗑️</button>
+                        </div>
+                    </article>
+
+                    <article class="expert-card">
+                        <div class="card-image">
+                            <span class="photo-placeholder">( FOTO )</span>
+                        </div>
+                        <div class="card-content">
+                            <h3>Dr. Pedro Santos</h3>
+                            <p class="expert-specialty">Répteis</p>
+                            <p class="expert-email">pedro.santos@animalec.pt</p>
+                            <p class="expert-status status-unavailable">✗ Indisponível</p>
+                        </div>
+                        <div class="card-actions">
+                            <button class="btn-view" aria-label="Visualizar">👁️</button>
+                            <button class="btn-edit" aria-label="Editar">✏️</button>
+                            <button class="btn-delete" aria-label="Eliminar">🗑️</button>
+                        </div>
+                    </article>
+                </div>
+
+                <nav class="pagination">
+                    <button class="btn-prev" aria-label="Página anterior">‹</button>
+                    <span class="page-info">1/2</span>
+                    <button class="btn-next" aria-label="Próxima página">›</button>
+                </nav>
+            </div>
+        </section>
+    </main>
+
+    <footer class="admin-footer">
+        <p>© 2025 Animalec</p>
+    </footer>
+
+    <script src="../js/admin.js"></script>
+    <script src="../js/admin-entities.js"></script>
+</body>
+</html>
