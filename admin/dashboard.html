@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animalec - Painel de Administração</title>
+    <link rel="stylesheet" href="../css/admin.css">
+</head>
+<body>
+    <header class="admin-header">
+        <div class="header-content">
+            <h1>Animalec - Back-office</h1>
+            <nav class="admin-nav">
+                <ul>
+                    <li><a href="#dashboard" class="nav-link active">Dashboard</a></li>
+                    <li><a href="#animais" class="nav-link">Animais</a></li>
+                    <li><a href="#utilizadores" class="nav-link">Utilizadores</a></li>
+                    <li><a href="#quizzes" class="nav-link">Quizzes</a></li>
+                    <li><a href="#questoes" class="nav-link">Questões</a></li>
+                    <li><a href="#patrocinadores" class="nav-link">Patrocinadores</a></li>
+                    <li><a href="#especialistas" class="nav-link">Especialistas</a></li>
+                    <li><a href="../index.html" class="logout-link">Sair</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="admin-main">
+        <aside class="admin-sidebar">
+            <nav>
+                <ul>
+                    <li><a href="#dashboard" class="sidebar-link active">📊 Dashboard</a></li>
+                    <li><a href="#animais" class="sidebar-link">🐾 Animais</a></li>
+                    <li><a href="#utilizadores" class="sidebar-link">👥 Utilizadores</a></li>
+                    <li><a href="#quizzes" class="sidebar-link">📝 Quizzes</a></li>
+                    <li><a href="#questoes" class="sidebar-link">❓ Questões</a></li>
+                    <li><a href="#patrocinadores" class="sidebar-link">🤝 Patrocinadores</a></li>
+                    <li><a href="#especialistas" class="sidebar-link">🔬 Especialistas</a></li>
+                </ul>
+            </nav>
+        </aside>
+
+        <section class="admin-content">
+            <div id="dashboard" class="content-section active">
+                <header>
+                    <h2>Dashboard</h2>
+                    <p>Visão geral do sistema</p>
+                </header>
+                
+                <div class="dashboard-stats">
+                    <article class="stat-card">
+                        <h3>Total de Animais</h3>
+                        <p class="stat-number">24</p>
+                    </article>
+                    <article class="stat-card">
+                        <h3>Utilizadores Registados</h3>
+                        <p class="stat-number">156</p>
+                    </article>
+                    <article class="stat-card">
+                        <h3>Quizzes Disponíveis</h3>
+                        <p class="stat-number">8</p>
+                    </article>
+                    <article class="stat-card">
+                        <h3>Patrocinadores</h3>
+                        <p class="stat-number">5</p>
+                    </article>
+                    <article class="stat-card">
+                        <h3>Especialistas</h3>
+                        <p class="stat-number">3</p>
+                    </article>
+                </div>
+            </div>
+
+            <div id="animais" class="content-section">
+                <header>
+                    <h2>Gestão de Animais</h2>
+                    <button class="btn-add">Adicionar Animal</button>
+                </header>
+                
+                <table class="admin-table">
+                    <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>Nome</th>
+                            <th>Espécie</th>
+                            <th>Família</th>
+                            <th>Estado</th>
+                            <th>Ações</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>Leão</td>
+                            <td>Panthera leo</td>
+                            <td>Felidae</td>
+                            <td>Ativo</td>
+                            <td>
+                                <button class="btn-edit">Editar</button>
+                                <button class="btn-delete">Eliminar</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>Elefante Africano</td>
+                            <td>Loxodonta africana</td>
+                            <td>Elephantidae</td>
+                            <td>Ativo</td>
+                            <td>
+                                <button class="btn-edit">Editar</button>
+                                <button class="btn-delete">Eliminar</button>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div id="utilizadores" class="content-section">
+                <header>
+                    <h2>Gestão de Utilizadores</h2>
+                    <button class="btn-add">Adicionar Utilizador</button>
+                </header>
+                
+                <table class="admin-table">
+                    <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>Nome</th>
+                            <th>Email</th>
+                            <th>Tipo</th>
+                            <th>Estado</th>
+                            <th>Ações</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>João Silva</td>
+                            <td>joao@email.com</td>
+                            <td>Administrador</td>
+                            <td>Ativo</td>
+                            <td>
+                                <button class="btn-edit">Editar</button>
+                                <button class="btn-delete">Eliminar</button>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div id="quizzes" class="content-section">
+                <header>
+                    <h2>Gestão de Quizzes</h2>
+                    <button class="btn-add">Adicionar Quiz</button>
+                </header>
+                
+                <table class="admin-table">
+                    <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>Título</th>
+                            <th>Categoria</th>
+                            <th>Nº Questões</th>
+                            <th>Estado</th>
+                            <th>Ações</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>Quiz de Mamíferos</td>
+                            <td>Mamíferos</td>
+                            <td>10</td>
+                            <td>Ativo</td>
+                            <td>
+                                <button class="btn-edit">Editar</button>
+                                <button class="btn-delete">Eliminar</button>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div id="questoes" class="content-section">
+                <header>
+                    <h2>Gestão de Questões</h2>
+                    <button class="btn-add">Adicionar Questão</button>
+                </header>
+                
+                <table class="admin-table">
+                    <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>Pergunta</th>
+                            <th>Quiz</th>
+                            <th>Dificuldade</th>
+                            <th>Ações</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>Qual é o maior mamífero terrestre?</td>
+                            <td>Quiz de Mamíferos</td>
+                            <td>Fácil</td>
+                            <td>
+                                <button class="btn-edit">Editar</button>
+                                <button class="btn-delete">Eliminar</button>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div id="patrocinadores" class="content-section">
+                <header>
+                    <h2>Gestão de Patrocinadores</h2>
+                    <button class="btn-add">Adicionar Patrocinador</button>
+                </header>
+                
+                <table class="admin-table">
+                    <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>Nome</th>
+                            <th>Email</th>
+                            <th>Telefone</th>
+                            <th>Animal Patrocinado</th>
+                            <th>Estado</th>
+                            <th>Ações</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>Zoo Lisboa</td>
+                            <td>contacto@zoolisboa.pt</td>
+                            <td>+351 21x xxx xxx</td>
+                            <td>Leão</td>
+                            <td>Ativo</td>
+                            <td>
+                                <button class="btn-edit">Editar</button>
+                                <button class="btn-delete">Eliminar</button>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div id="especialistas" class="content-section">
+                <header>
+                    <h2>Gestão de Especialistas</h2>
+                    <button class="btn-add">Adicionar Especialista</button>
+                </header>
+                
+                <table class="admin-table">
+                    <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>Nome</th>
+                            <th>Email</th>
+                            <th>Especialidade</th>
+                            <th>Qualificações</th>
+                            <th>Estado</th>
+                            <th>Ações</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>Dr. Maria Santos</td>
+                            <td>maria.santos@universidade.pt</td>
+                            <td>Felinos</td>
+                            <td>Doutoramento em Biologia</td>
+                            <td>Ativo</td>
+                            <td>
+                                <button class="btn-edit">Editar</button>
+                                <button class="btn-delete">Eliminar</button>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+    </main>
+
+    <script src="../js/admin.js"></script>
+</body>
+</html>
